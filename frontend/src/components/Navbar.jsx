@@ -21,7 +21,7 @@ const Navbar = () => {
           <FaShoppingCart />
           {cartCount > 0 && <span className="badge">{cartCount}</span>}
         </Link>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <a href="https://github.com/IRONalways17/Datence-book-store" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
           <FaGithub />
         </a>
       </div>
