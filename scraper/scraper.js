@@ -1,7 +1,9 @@
 const puppeteer = require('puppeteer');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-mongoose.connect('mongodb://localhost:27017/book-explorer', {
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/book-explorer';
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
